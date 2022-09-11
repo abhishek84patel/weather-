@@ -20,7 +20,7 @@ function sumbit(response, status) {
                 let abh= data.weather[0].main;
                 let des_n = data.weather[0].description;
                 //let url = "http://openweathermap.org/img/w/+" + icon + ".png"
-                tempvalue.innerHTML = (data.main.temp);
+                tempvalue.innerHTML = (data.main.temp-273+"°C");
                 namevalue.innerHTML = (data.name);
                 imginsert.src = "http://openweathermap.org/img/w/" + icon + ".png"
                 // ma.innerhtml =des_n;
